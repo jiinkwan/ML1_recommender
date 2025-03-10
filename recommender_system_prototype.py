@@ -78,7 +78,7 @@ if df is not None:
                 with cols[i % 3]:  # Assign each recommendation to a separate column
                     st.write(f"**{item} in {color}**")
                     if image_url and pd.notna(image_url):
-                        st.image(image_url, caption=f"{item} in {color}", use_column_width=True)
+                        st.image(image_url, caption=f"{item} in {color}", use_container_width=True)
                     else:
                         st.write("Image not available")
             
